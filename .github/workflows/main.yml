@@ -28,9 +28,6 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
-    # a job is a seq of steps
-    steps:
-
     - name: Install Python dependencies
       run: |
         python3 -m pip install --upgrade pip
