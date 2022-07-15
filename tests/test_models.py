@@ -10,6 +10,7 @@ import pytest
     [
         ([[0,0], [0,0], [0,0]], [0,0]),
         ([[1,2], [3,4], [5,6]], [3,4]),
+        ([[1,2], [float('nan'),4], [5,6]], [float('nan'),4]),
     ])
 def test_daily_mean(test, expected):
     """Test mean function works for array of zeros and positive integers"""
@@ -24,6 +25,7 @@ def test_daily_mean(test, expected):
         ([[0, 0, 0], [0, 0, 0], [0, 0, 0]], [0, 0, 0]),
         ([[4, 2, 5], [1, 6, 2], [4, 1, 9]], [4, 6, 9]),
         ([[4, -2, 5], [1, -6, 2], [-4, -1, 9]], [4, -1, 9]),
+        ([[4, -2, 5], [float('nan'), -6, 2], [-4, -1, 9]], [float('nan'), -1, 9]),
     ])
 def test_daily_max(test, expected):
     """Test max function works for zeroes, positive integers, mix of positive/negative integers."""
@@ -38,6 +40,7 @@ def test_daily_max(test, expected):
         ([[0, 0, 0], [0, 0, 0], [0, 0, 0]], [0, 0, 0]),
         ([[4, 2, 5], [1, 6, 2], [4, 1, 9]], [1, 1, 2]),
         ([[4, -2, 5], [1, -6, 2], [-4, -1, 9]], [-4, -6, 2]),
+        ([[4, -2, 5], [1, -6, 2], [-4, -1, float('nan')]], [-4, -6, float('nan')]),
     ])
 def test_daily_min(test, expected):
     """Test min function works for zeroes, positive integers, mix of positive/negative integers."""
