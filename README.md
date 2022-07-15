@@ -25,16 +25,51 @@ The following optional packages are required to run Inflam's unit tests:
 - [pytest-cov](https://pypi.org/project/pytest-cov/) - Adds test coverage stats to unit testing
 
 ## Installation
-TBD
+
+Requirements
+
+Python>3.7
+cycler==0.11.0
+fonttools==4.28.1
+kiwisolver==1.3.2
+matplotlib==3.5.0
+numpy==1.21.4
+packaging==21.2
+Pillow==8.4.0
+pyparsing==2.4.7
+python-dateutil==2.8.2
+setuptools-scm==6.3.2
+six==1.16.0
+tomli==1.2.2
+
+For testing install pytest:
+
+>pip3 install pytest
+
+
+
 ## Basic usage
-TBD
+
+Testing:
+>pytest tests/test_models.py
+
+In command prompt type to start code
+
+>python3 inflammation-analysis.py
+
+basic usage of code in Python shell:
+
+>import inflammation
+>from inflammation import  models, serializers,views
+
 ## Contributing
-TBD
+Contributors  to open source are sought, with skills in statitistical analysis and vizualization 
+
 ## Contact information
 vincenzo.petrecca@unina.it
 
 ## Acknowedgements
-We thank [software carpentry](https://software-carpentry.org/) for their wonderful course.
+We thank [software carpentry](https://software-carpentry.org/) from Southempton University for their wonderful course.
 
 ## Citation
 |               | Creation                                                                        | Editing/Updating                                                    | Validation                                                                      | Conversion                                                                                                                                                       |
