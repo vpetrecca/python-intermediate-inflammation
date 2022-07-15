@@ -25,14 +25,16 @@ The following optional packages are required to run Inflam's unit tests:
 - [pytest-cov](https://pypi.org/project/pytest-cov/) - Adds test coverage stats to unit testing
 
 ## Installation
-
+TBD
 ## Basic usage
-
+TBD
 ## Contributing
-
+TBD
 ## Contact information
+vincenzo.petrecca@unina.it
 
 ## Acknowedgements
+We thank [software carpentry](https://software-carpentry.org/) for their wonderful course.
 
 ## Citation
 |               | Creation                                                                        | Editing/Updating                                                    | Validation                                                                      | Conversion                                                                                                                                                       |
@@ -42,7 +44,6 @@ The following optional packages are required to run Inflam's unit tests:
 | Python        |                                                                                 | • [doi2cff](https://github.com/citation-file-format/doi2cff)        | • [cffconvert](#validation-heavy_check_mark)                                    | • [cffconvert](https://github.com/citation-file-format/cff-converter-python)<br>• [doi2cff](https://github.com/citation-file-format/doi2cff)                     |
 
 ## License
-
 Copyright © 2022.
 
 This work is licensed under a [Creative Commons Attribution 4.0 International (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/legalcode) license.
